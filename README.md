@@ -13,3 +13,7 @@ Both models predict credit spreads for illiquid corporate bonds using a neural f
 
 ## Data
 The dataset (~15M observations, 32,723 bonds, 2015–2025) combines OSBAP, CRSP/Compustat (via WRDS), and FRED. Due to data licensing (WRDS), the raw dataset is not included in this repository.
+
+
+## Note
+This code represents the final confirmed configurations discussed in the dissertation (Sections 4.10 and 6.4). Intermediate development versions (V1–V9) are not included here.
