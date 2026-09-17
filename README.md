@@ -11,6 +11,10 @@ This repository contains the final implementations of the two core models develo
 
 Both models predict credit spreads for illiquid corporate bonds using a neural feature extractor (deterministic for V5, variational for V10) jointly trained with a sparse variational Gaussian process (SVGP).
 
+## Contents
+- `V5/` — DKL architecture sweep winner (feature extractor 64→128→64→32, GELU, Matérn ν=0.5, RMSE 0.00323)
+- `V10/` — VAE-DKL final iteration (Gaussian likelihood, 5 active latent dims, RMSE 0.00403–0.00444)
+
 ## Data
 The dataset (~15M observations, 32,723 bonds, 2015–2025) combines OSBAP, CRSP/Compustat (via WRDS), and FRED. Due to data licensing (WRDS), the raw dataset is not included in this repository.
 
